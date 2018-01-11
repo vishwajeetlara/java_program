@@ -1,16 +1,28 @@
-class M8
+
+package com.lara;
+
+import java.util.ArrayList;
+
+
+public class M8 
 {
-	enum Day
-	{
-		SUN,MON,TUE,WED,THR,FRI,SAT//enum become a member of class
-	}
-	public static void main(String[] args) 
-	{
-		Day []days=Day.values();
-		for (Day day :days )//if you wat to check what are the 
-		{
-		
-		System.out.println(day);
-		}//values is on bilitin method it will return arry enum constant constof the enum constent
-	}
+     public static  void main(String args[])
+     {
+         ArrayList list=new ArrayList();
+         list.add(1000);
+         list.add(1000.00);
+         list.add("abc");
+         list.add('A');
+         list.add(true);
+         list.add(2,"xyz");//we are adding element in the middle or index 2
+         System.out.println(list); 
+         //manupulation in very simple
+         System.out.println(list.isEmpty());
+         list.set(3, "hello");//here we are replacing  hello to abc
+         System.out.println(list); 
+         System.out.println(list.isEmpty());//aftar clear the list is return true
+        
+    
+     }
+    
 }

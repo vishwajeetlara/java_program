@@ -1,28 +1,22 @@
-enum A 
+
+package com.lara;
+
+import java.util.ArrayList;
+import java.util.Collections;
+public class M15
 {
-	JAN(31), FEB(28), MAR(31);
-	int days;
-	A(int days)
-	{
-		this.days = days;
-	}
-	int getDays()
-	{
-		return days;
-	}
-}
-class M15
-{
-	public static void main(String[] args) 
-	{
-		A a1 = A.JAN;
-		System.out.println(a1);
-		System.out.println(a1.getDays());
-		System.out.println(a1.days);
-		
-		A month = A.FEB;
-		System.out.println(month);
-		System.out.println(month.getDays());
-		System.out.println(month.days);
-	}
+     public  static  void main(String[]args)
+    {
+        ArrayList list=new ArrayList();
+        list.add(9);
+        list.add(0);
+        list.add(91);
+        list.add(19);
+        list.add(29);
+        list.add(6);
+        System.out.println(list);
+        Collections.sort(list,Collections.reverseOrder());//we are  want sorting desendin oder element
+        System.out.println(list);
+    }
+    
 }

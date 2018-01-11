@@ -1,17 +1,25 @@
-class M7 
+
+package com.lara;
+
+import java.util.ArrayList;
+
+public class M7 
 {
-	enum Day
-	{
-		SUN,MON,TUE,WED,THR,FRI,SAT//enum become a member of class
-	}
-	public static void main(String[] args) 
-	{
-		Day d1=Day.WED;
-		Day d2=Day.FRI;
-		Day d3=Day.SUN;
-		System.out.println(d1.ordinal());
-		System.out.println(d2.ordinal());
-		System.out.println(d3.ordinal());
-		System.out.println(Day.SAT.ordinal());//ordinal bilitin method it will return index of the enum constent
-	}
+     public static  void main(String args[])
+     {
+         ArrayList list=new ArrayList();
+         list.add(1000);
+         list.add(1000.00);
+         list.add("abc");
+         list.add('A');
+         list.add(true);
+         list.add(2,"xyz");//we are adding element in the middle or index 2
+         System.out.println(list); 
+         //manupulation in very simple
+         System.out.println(list.isEmpty()); //before clear the list it is return false
+         list.clear();
+         System.out.println(list.isEmpty()); //aftar clear the list is return true
+    
+     }
+    
 }

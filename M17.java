@@ -1,27 +1,23 @@
-enum A 
-{
-	JAN(31), FEB(28), MAR(31);
-	int days;
-	A(int days)
-	{
-		this.days = days;
-		System.out.println(this+":"+days);
+
+package com.lara;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 
-	}
-	int getDays()
-	{
-		return days;
-	}
-}
-class M17
+public class M17 
 {
-	public static void main(String[] args) 
-	{
-		A a1 = A.MAR;
-		System.out.println(a1);
-		System.out.println(a1.getDays());
-		System.out.println(a1.days);		
-	                     
-	}
+       public  static  void main(String[]args)
+       {
+        ArrayList list=new ArrayList();
+        list.add(9);
+        list.add(0);
+        list.add(91);
+        list.add(20);
+        list.add(29);
+        list.add(6);
+        Collections.sort(list,Collections.reverseOrder());
+        System.out.println(list);
+     }
+    
 }

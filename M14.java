@@ -1,25 +1,24 @@
-enum A 
+
+package com.lara;
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+public class M14
 {
-	JAN(31), FEB(28), MAR(31);
-	int i;
-	A(int i)
-	{
-		this.i = i;
-	}
+    public  static  void main(String[]args)
+    {
+        ArrayList list=new ArrayList();
+        list.add(9);
+        list.add(0);
+        list.add(91);
+        list.add(19);
+        list.add(29);
+        list.add(6);
+        list.add("abc");
+        System.out.println(list);
+        Collections.sort(list);//we are sorting element
+        System.out.println(list);
+    }
+    
 }
-class M14
-{
-	public static void main(String[] args) 
-	{
-		A a1 = A.JAN;
-		System.out.println(a1);
-		System.out.println(a1.i);
-	}
-}
-/*
-enum similar to objects.
-If we want common attributes We use enums with constructors.
-E:\Java\lab2\app39\classes>java M14
-JAN
-31
-*/

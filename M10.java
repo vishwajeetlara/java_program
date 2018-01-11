@@ -1,12 +1,22 @@
-class M10 
-{
-	public static void main(String[] args) 
-	{
-		Thread.State[] states=Thread.State.values();//jdk 1.5
-		for (Thread.State state:states)
-		{
-			System.out.println(state);//insid a thred state is a Enum state is a pridifine Enum
 
-		}
-	}
+package com.lara;
+
+import java.util.ArrayList;
+public class M10 
+{
+       public static  void main(String args[])
+     {
+         ArrayList list=new ArrayList();
+         list.add(1000);
+         list.add(1000.00);
+         list.add(1000.00);
+         list.add("abc");
+         list.add("abc");
+         list.add('A');
+         list.add('A');
+         list.add(true);
+         list.add(true);
+         list.add(2,"xyz");
+         System.out.println(list); //in arrayList duplicat is allow or allowing
+     }   
 }

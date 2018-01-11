@@ -1,11 +1,28 @@
-enum A
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.lara;
+
+import java.util.ArrayList;
+class A
 {
-	CON1,CON2,CON3 //without semi colon we are able to deblop a Enum class
+    int i;
+    A(int i)
+    {
+        this.i=i;
+    }
 }
-class  M22
+public class M22 
 {
-	public static void main(String[] args) 
-	{
-		System.out.println(A.CON2);
-	}
+    public static void main(String args[])
+    {
+        ArrayList list=new ArrayList();
+        list.add(new A(9));
+        list.add(new A(19));
+        list.add(new A(91));
+        list.add(new A(29));
+        System.out.println(list);
+    }
+    
 }

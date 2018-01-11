@@ -1,15 +1,36 @@
-enum A
-{
-	CON1,CON2,CON3;      //any othar member are there we need to end ; collon is mendetroy
 
-		A()
-	    {
-	    }
-}
-class  M23
+package com.lara;
+
+import java.util.ArrayList;
+
+
+class B
 {
-	public static void main(String[] args) 
-	{
-		System.out.println(A.CON2);
-	}
+    int i;
+    B(int i)
+    {
+        this.i=i;
+    }
+
+    @Override
+    public String toString()
+    {
+        return"i"+i;
+    }
+    
 }
+public class M23 
+{
+    
+    public static void main(String args[])
+    {
+        ArrayList list=new ArrayList();
+        list.add(new B(9));
+        list.add(new B(19));
+        list.add(new B(91));
+        list.add(new B(29));
+        System.out.println(list);
+        
+    }
+}
+    
